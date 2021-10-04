@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     // 入口起点，从项目的根目录开始读取路径，而不是配置文件所在的config目录
     entry: {
-        app: './src/index.ts',
+        app: './src/index.tsx',
     },
     // 输出
     output: {
@@ -55,7 +55,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.(ts|js)$/,
+                test: /\.(tsx|ts|js)$/,
                 include: [
                     path.resolve(__dirname, '../src'), // src 目录下的才需要经过 babel-loader 处理
                 ],
@@ -66,6 +66,7 @@ module.exports = {
                             useBuiltIns: 'usage',
                             corejs: 3,
                         }],
+                        '@babel/preset-react',
                         '@babel/typescript',
                     ],
                     plugins: [

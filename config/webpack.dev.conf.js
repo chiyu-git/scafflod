@@ -35,7 +35,7 @@ module.exports = merge(baseWebpackConfig, {
     // 代码模块路径解析的配置
     resolve: {
         // 自动添加模块后缀名
-        extensions: ['.ts', '.wasm', '.mjs', '.js', '.json'],
+        extensions: ['.tsx', '.ts', '.wasm', '.mjs', '.js', '.json'],
         alias: {
             '@src': path.resolve(__dirname, '../src'),
             '@components': path.resolve(__dirname, '../src/components'),

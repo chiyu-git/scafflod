@@ -1,5 +1,5 @@
 module.exports = {
     extends: [
-        '@chiyu-git/eslint-config-basic',
+        '@chiyu-git/eslint-config-react',
     ],
 };
